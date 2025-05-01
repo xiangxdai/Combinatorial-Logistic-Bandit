@@ -10,6 +10,9 @@ This repository contains Python implementations of algorithms from the paper *"C
 
   *Illustration of a sigmoid function with linear predictor x=θΦ(i) as input. The larger the |x|, the flatter the curve is, and the higher the nonlinearity level κ, where κ grows exponentially fast w.r.t |x|.*
 
+  ![cdn2](cdn2.png)
+  
+  *Application Example: CLogB for content delivery networks, the decision maker chooses servers based on contextual features, successfully covers users (green check marks) via edges (solid lines) with probability p(u,v), and gains rewards if the user consumes the content (red play buttons) with probability p(v).* 
 - The code simulates a cascading bandit reward model, where the learner selects a super arm of size ( k_A ), observes feedback until a satisfactory item is found, and updates the model using Maximum Likelihood Estimation (MLE).
 
 
