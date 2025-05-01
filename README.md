@@ -8,7 +8,7 @@ This repository contains Python implementations of algorithms from the paper *"C
 
   ![log_curve_1](log_curve_1.png)
 
-  *Illustration of a sigmoid function with linear predictor x=θφ(i) as input. The larger the |x|, the flatter the curve is, and the higher the nonlinearity level κ, where κ grows exponentially fast w.r.t |x|.*
+  *Illustration of a sigmoid function with linear predictor x=θΦ(i) as input. The larger the |x|, the flatter the curve is, and the higher the nonlinearity level κ, where κ grows exponentially fast w.r.t |x|.*
 
 - The code simulates a cascading bandit reward model, where the learner selects a super arm of size ( k_A ), observes feedback until a satisfactory item is found, and updates the model using Maximum Likelihood Estimation (MLE).
 
