@@ -57,7 +57,7 @@ The primary computational bottleneck is the Maximum Likelihood Estimation (MLE),
 2. **Sliding Window**:
    - The `history` list, which stores observations, grows linearly with time, leading to O(t)  or higher complexity for Hessian updates and MLE computation.
    - A sliding window limits `history` to the most recent 1000 entries (`window_size=1000`), capping the computational cost.
-   - Larger windows improve performance (better MLE accuracy) but increase computation time. For larger k_A , a smaller window (e.g., 500) can be used to balance performance and speed.
+   - Larger windows improve performance (better MLE accuracy) but increase computation time. For larger k_A, a smaller window (e.g., 500) can be used to balance performance and speed.
 3. **Incremental Matrix Updates**:
    - The Gram and Hessian matrices (`Gram` and `H_t`) are updated incrementally for each observation, avoiding recomputation from scratch.
 
@@ -91,4 +91,13 @@ The EVA-CLogUCB algorithm includes a burn-in stage of length ( T_0 ), which cons
 
 ## References
 
-- Liu, X., Dai, X., Wang, X., Hajiesmaili, M., & Lui, J. (2024). Combinatorial Logistic Bandits. *arXiv preprint arXiv:2410.17075*.
+If you think this work is helpful to your research, please feel free to cite our paper.
+
+```
+@article{liu2024combinatorial,
+  title={Combinatorial Logistic Bandits},
+  author={Liu, Xutong and Dai, Xiangxiang and Wang, Xuchuang and Hajiesmaili, Mohammad and Lui, John},
+  journal={arXiv preprint arXiv:2410.17075},
+  year={2024}
+}
+```
