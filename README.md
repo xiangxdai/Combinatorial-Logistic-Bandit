@@ -8,7 +8,7 @@ This repository contains Python implementations of algorithms from the paper *"C
 
   ![log_curve_1](log_curve_1.png)
 
-  *Illustration of a sigmoid function with linear predictor $x=\theta^{\top} \phi(i)$ as input. The larger the $|x|$, the flatter the curve is, and the higher the nonlinearity level $\kappa$, where $\kappa$ grows exponentially fast w.r.t $|x|$.*
+  *Illustration of a sigmoid function with linear predictor x=θφ(i) as input. The larger the |x|, the flatter the curve is, and the higher the nonlinearity level κ, where κ grows exponentially fast w.r.t |x|.*
 
 - The code simulates a cascading bandit reward model, where the learner selects a super arm of size ( k_A ), observes feedback until a satisfactory item is found, and updates the model using Maximum Likelihood Estimation (MLE).
 
@@ -77,7 +77,7 @@ The EVA-CLogUCB algorithm includes a burn-in stage of length ( T_0 ), which cons
 
 ##### Choosing ( T_0' )
 
-- **Theoretical Guidance**: The worst-case ( T_0 ) ensures the nonlinearity-restricted region ( Q ) contains the true parameter $\theta^*$ with high probability, but it scales with ( \kappa ) and ( d^2 ), making it overly conservative.
+- **Theoretical Guidance**: The worst-case ( T_0 ) ensures the nonlinearity-restricted region ( Q ) contains the true parameter with high probability, but it scales with κ and d, making it overly conservative.
 
 - Practical Choice: Set ( T_0' ) based on the problem scale.
 
